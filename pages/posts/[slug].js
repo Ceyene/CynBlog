@@ -1,5 +1,3 @@
-function SinglePostPage() {
-    return (  );
-}
+function SinglePostPage() {}
 
 export default SinglePostPage;
