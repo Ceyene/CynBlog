@@ -3,7 +3,7 @@
 	date: '2022-05-11',
 	image: 'sixth-post.png',
 	excerpt: 'This is the sixth post, but not really. This is a dummy post.',
-	isFeatured: true
+	isFeatured: false
 ---
 
 # My sixth post

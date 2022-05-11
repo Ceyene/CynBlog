@@ -1,9 +1,9 @@
 ---
 	title: 'My Fourth Post',
-	date: '2022-05-11',
+	date: '2022-05-07',
 	image: 'fourth-post.png',
 	excerpt: 'This is the fourth post, but not really. This is a dummy post.',
-	isFeatured: true
+	isFeatured: false
 ---
 
 # My fourth post

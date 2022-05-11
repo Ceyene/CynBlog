@@ -1,6 +1,6 @@
 ---
 	title: 'My First Post',
-	date: '2022-05-11',
+	date: '2022-04-30',
 	image: 'first-post.png',
 	excerpt: 'This is the first post, but not really. This is a dummy post.',
 	isFeatured: true
