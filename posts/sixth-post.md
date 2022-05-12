@@ -1,9 +1,9 @@
 ---
-	title: 'My Sixth Post',
-	date: '2022-05-11',
-	image: 'sixth-post.png',
-	excerpt: 'This is the sixth post, but not really. This is a dummy post.',
-	isFeatured: false
+title: 'My Sixth Post'
+date: '2022-05-11'
+image: 'sixth-post.png'
+excerpt: 'This is the sixth post, but not really. This is a dummy post.'
+isFeatured: false
 ---
 
 # My sixth post

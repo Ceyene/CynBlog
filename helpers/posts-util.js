@@ -6,13 +6,13 @@ import matter from 'gray-matter';
 const postDirectory = path.join(process.cwd(), 'posts');
 
 //getting full post content
-function getPostData(fileName) {
-	const filePath = path.join(postDirectory, fileName);
+export function getPostData(fileName) {
+	const postSlug = fileName.replace(/\.md$/, ''); //creating post slug by replacing its file extension with an empty string
+	const filePath = path.join(postDirectory, `${postSlug}.md`);
 	const fileContent = fs.readFileSync(filePath, 'utf-8');
 	//extracting metadata and content separately
 	const { data, content } = matter(fileContent);
 
-	const postSlug = fileName.replace(/\.md$/, ''); //creating post slug by replacing its file extension with an empty string
 	//creating post data and adding the slug in it
 	const postData = {
 		slug: postSlug,
@@ -24,7 +24,7 @@ function getPostData(fileName) {
 }
 
 //fetching all posts
-function getAllPosts() {
+export function getAllPosts() {
 	//reading directory
 	const postFiles = fs.readdirSync(postDirectory);
 
@@ -41,7 +41,7 @@ function getAllPosts() {
 }
 
 //fetching only featured posts
-function getFeaturedPosts() {
+export function getFeaturedPosts() {
 	const allPosts = getAllPosts();
 
 	const featuredPosts = allPosts.filter((post) => post.isFeatured);

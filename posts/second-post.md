@@ -1,9 +1,9 @@
 ---
-	title: 'My Second Post',
-	date: '2022-05-03',
-	image: 'second-post.png',
-	excerpt: 'This is the second post, but not really. This is a dummy post.',
-	isFeatured: true
+title: 'My Second Post'
+date: '2022-05-03'
+image: 'second-post.png'
+excerpt: 'This is the second post, but not really. This is a dummy post.'
+isFeatured: true
 ---
 
 # My second post

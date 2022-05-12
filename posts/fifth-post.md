@@ -1,9 +1,9 @@
 ---
-	title: 'My Fifth Post',
-	date: '2022-05-09',
-	image: 'fifth-post.png',
-	excerpt: 'This is the fifth post, but not really. This is a dummy post.',
-	isFeatured: false
+title: 'My Fifth Post'
+date: '2022-05-09'
+image: 'fifth-post.png'
+excerpt: 'This is the fifth post, but not really. This is a dummy post.'
+isFeatured: false
 ---
 
 # My fifth post
