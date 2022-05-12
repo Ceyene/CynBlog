@@ -6,8 +6,8 @@ import matter from 'gray-matter';
 const postDirectory = path.join(process.cwd(), 'posts');
 
 //getting full post content
-export function getPostData(fileName) {
-	const postSlug = fileName.replace(/\.md$/, ''); //creating post slug by replacing its file extension with an empty string
+export function getPostData(postIdentifier) {
+	const postSlug = postIdentifier.replace(/\.md$/, ''); //creating post slug by replacing its file extension with an empty string
 	const filePath = path.join(postDirectory, `${postSlug}.md`);
 	const fileContent = fs.readFileSync(filePath, 'utf-8');
 	//extracting metadata and content separately
