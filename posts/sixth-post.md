@@ -11,7 +11,16 @@ isFeatured: false
 This is my sixth post in this blog, so... Hello for the sixth time!
 See my other blog and posts and follow me on social media.
 
+```js
+const basics = 'Okay, that should not be too difficult actually';
+
+function printBasics() {
+  console.log(basics):
+}
+
+printBasics();
+```
+
 ## File-based Routing
 
-And, now, a small image for you to enjoy:
 ![Create routes via your file + folder structure](demo-image.png)
