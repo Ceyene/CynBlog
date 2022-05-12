@@ -14,4 +14,4 @@ See my other blog and posts and follow me on social media.
 ## File-based Routing
 
 And, now, a small image for you to enjoy:
-![Create routes via your file + folder structure](/images/posts/first-post/demo-image.png)
+![Create routes via your file + folder structure](demo-image.png)
