@@ -11,15 +11,25 @@ function PostContent(props) {
 
 	//creating image element to render in JSX
 	const customRenderers = {
-		img(image) {
-			return (
-				<Image
-					src={`/images/posts/${post.slug}/${image.src}`}
-					alt={image.alt}
-					width={600}
-					height={400}
-				/>
-			);
+		p(paragraph) {
+			const { node } = paragraph;
+
+			if (node.children[0].tagName === 'img') {
+				const image = node.children[0];
+
+				return (
+					<div className={classes.image}>
+						<Image
+							src={`/images/posts/${post.slug}/${image.properties.src}`}
+							alt={image.properties.alt}
+							width={600}
+							height={400}
+						/>
+					</div>
+				);
+			}
+
+			return <p>{paragraph.children}</p>;
 		},
 	};
 
