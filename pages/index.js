@@ -12,7 +12,7 @@ function HomePage(props) {
 	);
 }
 
-//pre-rendering posts page
+//pre-generating props: featured posts
 export function getStaticProps() {
 	const featuredPosts = getFeaturedPosts();
 
