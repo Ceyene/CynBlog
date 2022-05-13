@@ -7,12 +7,12 @@ function ContactForm() {
 	const [enteredMessage, setEnteredMessage] = useState('');
 
 	//sending message
-	function sendMessageHandler(event) {
+	async function sendMessageHandler(event) {
 		event.preventDefault();
 
 		//adding client-side validation here if wanted
 
-		fetch('/api/contact', {
+		const response = await fetch('/api/contact', {
 			method: 'POST',
 			body: JSON.stringify({
 				email: enteredEmail,
@@ -23,6 +23,10 @@ function ContactForm() {
 				'Content-Type': 'application/json',
 			},
 		});
+		const data = await response.json();
+		if (!response.ok) {
+			console.log(data.message);
+		}
 	}
 
 	return (
